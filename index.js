@@ -5,7 +5,8 @@ var io = require('socket.io')(http);
 app.get('/', function(req, res){
 	res.send('<h1>Welcome Realtime Server</h1>');
 });
-
+app.get('/flexbox.html', function(req, res){
+});
 
 
 http.listen(3000, function(){
