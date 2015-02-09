@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -box-sizing:border-box;
+}
+/*flex-box三列等高*/
+#f_header,
+#f_footer{
+  width: 100%;
+  padding: 10px;
+  background: #ccc;
+
+}
+#f_page{
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+#main{
+  background: #e66;
+  padding: 10px;
+  margin: 0 10px;
+}
+#f_sidebar_left,
+#f_sidebar_right{
+  width: 220px;
+  padding: 10px;
+  background: #f36;
+}
+
+/*使用box布局模型中的box-ordinal-group来重新排列顺序*/
+#main{
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+
+  /*重新排列主内容顺序*/
+  -moz-box-ordinal-group:2;
+  -webkit-box-ordinal-group:2;
+  box-ordinal-group:2;
+}
+
+#f_sidebar_right{
+
+  -moz-box-ordinal-group:3;
+  -webkit-box-ordinal-group:3;
+  box-ordinal-group:3;
+}
+
+/*如果要整个页面的布局要和浏览器窗口可视区域一样高，首先要保证HTML和body元素的高度要和浏览器可见区域高度一致*/
+html,
+body{
+  height: 100%;
+}
+body{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient:vertical;
+  -webkit-box-orient:vertical;
+  box-orient:vertical;/*将三部分设置为垂直排列*/
+  width: 100%;
+}
+/*为了让三部分元素变成伸缩项目，具有伸缩性能适应浏览器可视区域的高度能力，
+在这个布局中，希望具有伸缩能力的元素是主体元素f_page，因此需要在这个元素上设置box-flex值大于1的正整数。*/
+#f_page{
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+}

@@ -1,0 +1,159 @@
+/*box-sizing*/
+
+.title{
+  height: 80px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 18px;
+  color: #f60;
+  font-weight: bold;
+}
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  color: #666;
+  font-size:16px;
+}
+.boder_box{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+#header{
+  height: 100px;
+  background: #38382e;
+  margin-bottom: 10px;
+
+  width: 100%;
+  padding: 10px;
+  border: 10px solid #ccc;
+
+}
+#footer{
+  background: #cc4ad5;
+  height: 100px;
+  clear: both;
+
+  width: 100%;
+  padding: 10px;
+  border: 10px solid #ccc;
+
+}
+.sidebar{
+  float: left;
+  width: 240px;
+  height: 300px;
+  background: #c8ca30;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  border: 10px solid #ccc;
+
+}
+.content{
+  float: left;
+  width: 740px;
+  background: #c8ca30;
+  height: 300px;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  border: 10px solid #ccc;
+}
+/*flex-box*/
+.flexbox>div{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+}
+.flexbox>div>div{
+  border: 1px solid #f36;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.box{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  margin-bottom: 10px;
+}
+.box2{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  margin-bottom: 10px;
+
+  -moz-box-pack:start;
+  -webkit-box-pack:start;
+  box-pack:start;
+
+  -moz-box-align:start;
+  -webkit-box-align:start;
+  box-align:start;
+
+  -moz-box-lines:multiple;
+  -webkit-box-lines:multiple;
+  box-lines:multiple;
+}
+.inline_box{
+  display: -moz-inline-box;
+  display: -webkit-inline-box;
+  display: inline-box;
+}
+
+/*_伸缩方向：box-orient:horizontal | vertical | inline-axis(沿着内联轴方向) | block-axis*/
+.box_horizontal{
+  -moz-box-orient:horizontal;
+  -webkit-box-orient:horizontal;
+  box-orient:horizontal;
+}
+.box_vertical{
+  -moz-box-orient:vertical;
+  -webkit-box-orient:vertical;
+  box-orient:vertical;
+
+}
+.box_inline_axis{
+  -moz-box-orient:inline-axis;
+  -webkit-box-orient:inline-axis;
+  box-orient:inline-axis;
+
+}
+.box_block_axis{
+  -moz-box-orient:block-axis;
+  -webkit-box-orient:block-axis;
+  box-orient:block-axis;
+
+}
+.rad{
+  height: 100px;
+  width: 100px;
+  /*border-radius:100px;*/
+  border-bottom-left-radius: 50px;
+  background: #f60; 
+}
+
+/*boxFlex*/
+.box_flex{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  margin: 100px;
+  background: #ccc;
+}
+.box_flex p:first-child{
+  background: #ef0;
+}
+.box_flex p:last-child{
+  background: #f60;
+}
+.flex p{
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+}

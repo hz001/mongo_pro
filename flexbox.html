@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+        <meta name="viewpoint" content="width:device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scale=no">
+        <meta name="apple-touch-fullscreen" content="YES">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <title>html5 css3盒模型</title>
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <h3 class="title">盒模型box-sizing</h3>
+            
+            <div id="header" class="boder_box">
+                header
+            </div>
+            <div class="sidebar boder_box">
+                sidebar
+            </div>
+            <div class="content boder_box">
+                content
+            </div>
+            <div id="footer" class="boder_box">
+                footer
+            </div>
+            
+        </div>
+
+        <div class="wrapper flexbox">
+            <h3 class="title">伸缩容器,display:box(块级伸缩容器) | inline-box（内联级伸缩容器）</h3>
+            <div class="box">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <div class="inline_box">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <div class="box box_horizontal">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <div class="box box_vertical">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+
+            <div class="box box_inline_axis">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <div class="box box_block_axis">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+        </div>
+
+        <div class="wrapper flexbox">
+            <h3 class="title">
+            伸缩换行box-lines:用来设置伸缩容器的伸缩项目是单行还是多行显示，以及决定侧轴的方向。默认都是单行或者单列。
+            box-lines:single | multiple
+
+            </h3>
+            <div class="box2 box_horizontal">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>K</div>
+            </div>
+            <div class="box2 box_vertical">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>K</div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper flexbox">
+            <h3 class="title">
+                混合版本Flexbox模型的基本使用：display:flexbox(设置元素为块级伸缩容器)|inline-flexbox（设置元素为内联块级伸缩容器），使用时候，主要用于IE10,使用时候在取值前面加上-ms-，display:-ms-flexbox
+            </h3>
+            
+        </div>
+        <div class="wrapper boxFlex">
+            <h3 class="title">伸缩性box-flex，能灵活的控制伸缩项目在伸缩容器中的显示空间，显示空间包括宽度高度，而不止是伸缩项目所在的深松容器的宽度，也可以说伸缩项目在伸缩容器中所占的面积。</h3>
+            
+            <div class="box_flex">
+                <p>我是一个绿色的伸缩项目</p>
+                <p>我是一个橙色的伸缩项目，我是用来测试box-flex的使用</p>
+            </div>
+            <div class="box_flex flex">
+                <p>我是一个绿色的伸缩项目fffnfnfnfnfnfnfnfnfnnfff</p>
+                <p>我是一个橙色的伸缩项目，我是用来测试box-flex的使用ffffjfjfjfjfjfjfjfjjfjfjfjfjff</p>
+            </div>
+        </div>
+
+    </body>
+</html>
